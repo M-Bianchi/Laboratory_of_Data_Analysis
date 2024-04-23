@@ -10,6 +10,23 @@ redshift = best estimate for the redshift of the source
 sdss.Xp = observed flux in the SDSS filter X (mJy, corrected for Galactic extinction), where X can be u g r i z 
 sdss.Xp_err = uncertainty on observed flux in the SDSS filter X (mJy, corrected for Galactic extinction), where X can be u g r i z 
 
+SDSS_LAB2024_CIGALEresults.fits
+---------------------------
+The output catalogue from CIGALE associated to the previous photometric file.
+The file content is as detailed in the CIGALE documentation and as discussed in the classroom
+
+SDSS_LAB2024_spectroscopy.fits
+---------------------------
+A spectroscopic catalogue from the SDSS DR18 coupled to the photometric catalogue above.
+
+A description of the columns:
+id = SDSS unique photometric ID
+ra = Right Ascension (J2000) (degrees)
+dec = Declination (J2000) (degrees)
+SpecObjID = SDSS unique spectroscopic ID
+XX_LLLL_flux, XX_LLLL_flux_err = flux and uncertainty for emission line XX at rest frame wavelength LLLL. Fluxes are in units of 1E-17 erg/s/cm2
+log_oh = The best estimate of the Oxygen abundance derived using Charlot & Longhetti 2001 models. The values are reported as 12 + Log O/H. See Tremonti et al (2004) for details.
+
 3dhst_catalogue.fits
 ---------------------
 A catalogue with the results of the stellar population fitting run on the 3D-HST fields using the FAST code. 
@@ -31,3 +48,5 @@ Stellar_metallicity = metallicity of the stellar population model (0.02 is solar
 Av_old = Dust extinction for the old stellar component in V-band (mag)
 Log_Mstar_Msun = log10 of the stellar mass (Msun)
 Log_SFR_Msun_yr = log10 of the SFR (Msun/yr)
+
+SDSS_LAB2024_
