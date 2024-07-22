@@ -1,0 +1,28 @@
+The \textbf{advection equation (AE)} is a simple hyperbolic partial differential equation, which in 1D is given by:
+\begin{equation}
+    \frac{\partial{u}}{\partial{t}} + a \frac{\partial{u}}{\partial{x}} = 0 \:.
+    \label{eq:advection}
+\end{equation}
+Its analytical solution is $u(x, t) = u(x-at, 0)$, and thus $a$ represents the velocity at which the function $u(x, t)$ shifts. We will consider $a={\rm const}=1$, $x \in \left[0,10\right]$ and $t \in \left[0,20\right]$.
+
+\vspace{4mm}  
+
+The first function we want to study is a gaussian with initial location $x_0=5$ and scale $\sigma=1/\sqrt{2}$:
+\begin{equation}
+    u(x, t=0) = \exp{\left[-(x-x_0)^2\right]} \:.
+    \label{eq:gaussian}
+\end{equation}
+We would like to find a numerical method which preserves both the shape and the amplitude of the solution in time. We can plot, for example, the \textbf{L2-norm}:
+\begin{equation} 
+    \norm{u_j^n}_2 = \left(\frac{1}{J} \sum_{i = 1}^J \abs{u_i^n}^2\right)^{1/2} \:,
+    \label{eq:l2norm}
+\end{equation}
+whose evolution over time should ideally be a horizontal line.
+
+
+
+
+\subsection{FTCS} \label{advection_FTCS}
+
+
+

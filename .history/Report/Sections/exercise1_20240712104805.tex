@@ -1,0 +1,125 @@
+The \textbf{advection equation (AE)} is a simple hyperbolic partial differential equation, which in 1D is given by:
+\begin{equation}
+    \frac{\partial{u}}{\partial{t}} + a \frac{\partial{u}}{\partial{x}} = 0 \:.
+    \label{eq:advection}
+\end{equation}
+Its analytical solution is $u(x, t) = u(x-at, 0)$, and thus $a$ represents the velocity at which the function $u(x, t)$ shifts. We will consider $a={\rm const}=1$, $x \in \left[0,10\right]$ and $t \in \left[0,20\right]$.
+
+\vspace{4mm}  
+
+The first function we want to study is a gaussian with initial location $x_0=5$ and scale $\sigma=1/\sqrt{2}$:
+\begin{equation}
+    u(x, t=0) = \exp{\left[-(x-x_0)^2\right]} \:.
+    \label{eq:gaussian}
+\end{equation}
+We would like to find a numerical method which preserves both the shape and the amplitude of the solution in time. We can plot, for example, the \textbf{L2-norm}:
+\begin{equation} 
+    \norm{u_j^n}_2 = \left(\frac{1}{J} \sum_{i = 1}^J \abs{u_i^n}^2\right)^{1/2} \:,
+    \label{eq:l2norm}
+\end{equation}
+whose evolution over time should ideally be a horizontal line.
+
+
+
+
+\subsection{FTCS} \label{advection_FTCS}
+\begin{figure}[b!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{adv_FTCS_l2norm.png}
+    \caption{\small L2-norm as a function of time for the FTCS method. Different lines correspond to different numbers of points. The black crosses show the FTCS solution computed through another code in the $100$-points case, for comparison. The y-axis scale makes it clear that the norm is diverging.}
+    \label{fig:advection_FTCS}
+\end{figure}
+
+The first numerical method we employ is the \textbf{FTCS} ({\it Forward in Time, Centered in Space}), obtained by expanding the AE to first order in time and second order in space. It is given by:
+\begin{equation}
+    u_j^{n+1} = u_j^n - a\frac{\Delta t}{2\Delta x} \left(u_{j+1}^n - u_{j-1}^n\right) \:.
+    \label{eq:FTCS}
+\end{equation}
+
+We initially consider $101$ x-grid points (i.e., $\Delta x = 0.1$) and compute the t-grid as $\Delta t = c_f \frac{\Delta x}{\abs{a}}$, where $c_f \in (0,1]$ is the Courant factor. We choose to use $c_f=0.5$ (i.e., $\Delta t = 0.05$ and $401$ t-grid points). Then, to see if the numerical solution converges to the analytical one, we can try to decrease $\Delta x$ to $10^{-2}$, $10^{-3}$, and finally $10^{-4}$. To evolve the solution at the boundaries of our x-grid (i.e., $j=1$ and $j=max(\{j\})\coloneqq J$), we use the \textbf{periodic boundary condition}:
+\begin{equation}
+    u_0^n = u_J^n \:,\: u_{J+1}^n = u_1^n \:.
+    \label{eq:periodic_bc}
+\end{equation}
+
+However, as we can see in Fig.\ref{fig:advection_FTCS}, the FTCS method tends to diverge. We expected this, since Von Neumann stability analysis classifies FTCS as an unconditionally unstable method in our case.
+
+
+
+
+\vspace{4mm} 
+\subsection{Lax-Friedrichs} \label{advection_LF}
+To cure the instability of the FTCS method, people tried to add an artificial dissipation term, obtaining the \textbf{Lax-Friedrichs (LF) method}:
+\begin{equation}
+    u_j^{n+1} = \frac{1}{2} \left(u_{j+1}^n + u_{j-1}^n\right) - a\frac{\Delta t}{2\Delta x} \left(u_{j+1}^n - u_{j-1}^n\right) \:,
+    \label{eq:LF}
+\end{equation}
+which is indeed stable, provided that $\Delta t$ is computed according to the CFL condition (as we did).
+As we can see in Fig.\ref{fig:advection_LF}, the downside of such a dissipation term is the damping of the solution over time. This problem can be counteracted by increasing the number of points, since the LF method is consistent, i.e., the error in the numerical solution tends to zero as $\Delta x$ tends to zero. For $N_{\rm points, x} = 10^5$, the solution is almost identical to the analytical one.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1.\textwidth]{adv_LF.png}
+    \caption{\small Function at $t=20$ (left) and L2-norm as a function of time (right) for the Lax-Friedrichs method. Different lines correspond to different numbers of points.}
+    \label{fig:advection_LF}
+\end{figure}
+
+
+
+
+\vspace{4mm} 
+\subsection{Leapfrog} \label{advection_LP}
+The next thing we can do is use a method that is both conditionally stable and second-order accurate in time, such as the \textbf{Leapfrog method}:
+\begin{equation}
+    u_j^{n+1} = u_j^{n-1} - a\frac{\Delta t}{\Delta x} \left(u_{j+1}^n - u_{j-1}^n\right) \:.
+    \label{eq:LP}
+\end{equation}
+The problem with this method is that $u_j^0$, which is not known, is required to compute $u_j^2$. A possible workaround consists of performing the first step with another method (in our case LF) and then switching to Leapfrog, but be aware that this is an approximated solution. In Fig.\ref{fig:advection_LP} we can see that the solution in the $100$-points case is clearly biased, but it tends to the analytical solution as we increase the number of points. The magnitude of the dissipation is far smaller than in LF.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1.\textwidth]{adv_LP.png}
+    \caption{\small Function at $t=20$ (left) and L2-norm as a function of time (right) for the Leapfrog method. Different lines correspond to different numbers of points.}
+    \label{fig:advection_LP}
+\end{figure}
+
+
+
+
+\vspace{4mm} 
+\subsection{Lax-Wendroff} \label{advection_LW}
+The last method we will look at is the \textbf{Lax-Wendroff (LW) method}:
+\begin{equation}
+    u_j^{n+1} = u_j^n - a\frac{\Delta t}{2\Delta x} \left(u_{j+1}^n - u_{j-1}^n\right) +  a^2\frac{\Delta t^2}{2\Delta x^2}\left(u_{j+1}^n - 2u_j^n + u_{j-1}^n\right) \:,
+    \label{eq:LW}
+\end{equation}
+which is a combination of LF and Leapfrog. The results in Fig.\ref{fig:advection_LW} are similar to those of Leapfrog, as the $100$-points solution shows some dispersion, which disappears as we increase the number of points. The amount of dissipation is also very similar.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1.\textwidth]{adv_LW.png}
+    \caption{\small Function at $t=20$ (left) and L2-norm as a function of time (right) for the Lax-Wendroff method. Different lines correspond to different numbers of points.}
+    \label{fig:advection_LW}
+\end{figure}
+
+
+
+
+\vspace{4mm} 
+\subsection{Outflow boundary condition} \label{advection_outflow}
+The periodic boundary condition we have used so far causes the solution to reappear from the left whenever it crosses the right boundary, and vice versa. A possible alternative is the \textbf{outflow boundary condition}, which makes the function disappear whenever it crosses a boundary. An approximated implementation is given by: 
+\begin{equation}
+    u_0^n = u_1^n \:,\: u_{J+1}^n = u_J^n \:.
+    \label{eq:outflow_bc}
+\end{equation}
+
+We can repeat the previous analysis with LF, Leapfrog, and LW methods. We should see the L2-norm go to zero when most of the solution has crossed the right boundary, and this is indeed what happens for LF and LW. Surprisingly, Leapfrog behaves quite differently: when the function crosses the boundary, instead of disappearing, it is reflected back with opposite velocity and amplitude, as shown in Fig.\ref{fig:advection_outflow}. We do not have a straightforward explanation for this\footnote{More examples about this issue at \url{https://faculty.washington.edu/rjl/classes/am586s2019/_static/Leapfrog_outflow.html}}, but note that Leapfrog is the only method, among those we used, that explicitly depends on the solution value at two previous timesteps (i.e., $u_j^{n-1}$). Moreover, any numerical artifact produced at the boundaries is free to grow, since Leapfrog is a non-dissipative method (however, LW also is).
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1.\textwidth]{adv_outflow.png}
+    \caption{\small The left panel displays the initial and final solutions obtained using Leapfrog method. In the right panel, the L2-norms of LF, LW, and Leapfrog are represented (the first two coincide).}
+    \label{fig:advection_outflow}
+\end{figure}
+
+
