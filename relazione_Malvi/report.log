@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.2)  23 JUL 2024 17:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.2)  26 JUL 2024 23:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -456,6 +456,10 @@ File: t1minntx.fd 2022/01/20 v1.1 font definition file for T1/minntx
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
+(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -477,13 +481,13 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 \Gin@req@width=\dimen163
 )
 LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line
- 88.
+ 90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 88.
+(Font)              scaled to size 9.0pt on input line 90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
@@ -493,51 +497,51 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 88.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 90.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 88.
+ 90.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 90.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-88.
+90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 90.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 88.
+ 90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 90.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 88.
+e 90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    ... okay on input line 90.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -582,15 +586,15 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 88.
+Package hyperref Info: Link coloring ON on input line 90.
  (./report.out) (./report.out)
-\@outlinefile=\write3
-\openout3 = `report.out'.
+\@outlinefile=\write4
+\openout4 = `report.out'.
 
 \c@mv@tabular=\count295
 \c@mv@boldtabular=\count296
-LaTeX Info: Command `\dddot' is already robust on input line 88.
-LaTeX Info: Command `\ddddot' is already robust on input line 88.
+LaTeX Info: Command `\dddot' is already robust on input line 90.
+LaTeX Info: Command `\ddddot' is already robust on input line 90.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -615,52 +619,52 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 16.0pt on input line 91.
+(Font)              scaled to size 16.0pt on input line 93.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 16.0pt on input line 91.
+(Font)              scaled to size 16.0pt on input line 93.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 91.
+(Font)              scaled to size 12.0pt on input line 93.
 LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
-e 91.
+e 93.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1minntx.fd
 File: ot1minntx.fd 2022/01/20 v1.0 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-91.
+93.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-91.
+93.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-91.
+93.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Trying to load font information for T1+ntxsups on input lin
-e 91.
+e 93.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxsups.fd
 File: t1ntxsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 12.0pt on input line 91.
+(Font)              scaled to size 12.0pt on input line 93.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 91.
+(Font)              scaled to size 8.0pt on input line 93.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 8.0pt on input line 91.
+(Font)              scaled to size 8.0pt on input line 93.
 
 ! Undefined control sequence.
 \@author ...lotti10@campus.unimib.it} \\ \address 
                                                   {$^{1}$~\milan }
-l.91 \maketitle
+l.93 \maketitle
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -670,67 +674,204 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 91.
+(Font)              size <5> substituted on input line 93.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 9.0pt on input line 94.
+(Font)              scaled to size 9.0pt on input line 96.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 94.
+(Font)              scaled to size 10.0pt on input line 96.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.0pt on input line 102.
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 100.
-
-! LaTeX Error: File `example' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.160 ...ludegraphics[width=\columnwidth]{example}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 163.
-(./report.bbl
-LaTeX Info: Redefining \VAN on input line 1.
-)
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.2pt on input line 232.
+(Font)              scaled to size 7.3pt on input line 115.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 5.5pt on input line 115.
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--118
+
+ []
+
+
+Package natbib Warning: Citation `bruzual_charlot_2003' on page 1 undefined on 
+input line 135.
+
+
+Package natbib Warning: Citation `Chabrier_2003' on page 1 undefined on input l
+ine 135.
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 8.0pt on input line 137.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.2pt on input line 137.
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 234.
- (/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+e 137.
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 234.
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/share/texlive/texmf-dist/fonts/
-enc/dvips/newtx/ntx-ot1-tlf.enc}
-
+(Font)              scaled to size 8.0pt on input line 137.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf
+-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/share/texlive/texmf-dist/fonts
+/enc/dvips/newtx/ntx-ot1-tlf.enc}
 
 
+{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
+<images/sSFRvsmstar.png, id=74, 714.0276pt x 561.5379pt>
+File: images/sSFRvsmstar.png Graphic file (type png)
+<use images/sSFRvsmstar.png>
+Package pdftex.def Info: images/sSFRvsmstar.png  used on input line 148.
+(pdftex.def)             Requested size: 209.84015pt x 165.02675pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
+
+ []
+
+
+Package natbib Warning: Citation `Kennicutt_Jr_1998' on page 2 undefined on inp
+ut line 165.
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 9.0pt on input line 186.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
+(Font)              scaled to size 9.0pt on input line 186.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
+(Font)              scaled to size 7.3pt on input line 186.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
+(Font)              scaled to size 5.5pt on input line 186.
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--197
+
+ []
+
+
+Package natbib Warning: Citation `10.1111/j.1365-2966.2009.15329.x' on page 2 u
+ndefined on input line 216.
+
+LaTeX Font Info:    Calculating math sizes for size <7.9> on input line 217.
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <4.34502> not available
+(Font)              size <5> substituted on input line 217.
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.9pt on input line 218.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 5.76695pt on input line 218.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 4.34502pt on input line 218.
+
+Package natbib Warning: Citation `moster_2012' on page 2 undefined on input lin
+e 223.
+
+
+Package natbib Warning: Citation `moster_2012' on page 2 undefined on input lin
+e 228.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
+
+ []
+
+
+Package natbib Warning: Citation `Mo_van' on page 2 undefined on input line 235
+.
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 237.
+[2
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.234 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
- been already used, duplicate ignored
+l.237 
+       <./images/sSFRvsmstar.png>]
+
+Package natbib Warning: Citation `moster_2012' on page 3 undefined on input lin
+e 243.
+
+<images/Frac_MS_mass.png, id=101, 617.1858pt x 499.3857pt>
+File: images/Frac_MS_mass.png Graphic file (type png)
+<use images/Frac_MS_mass.png>
+Package pdftex.def Info: images/Frac_MS_mass.png  used on input line 255.
+(pdftex.def)             Requested size: 209.84015pt x 169.78888pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--274
+
+ []
+
+<images/sSFR_mass_due_andamenti.png, id=112, 684.3969pt x 555.0336pt>
+File: images/sSFR_mass_due_andamenti.png Graphic file (type png)
+<use images/sSFR_mass_due_andamenti.png>
+Package pdftex.def Info: images/sSFR_mass_due_andamenti.png  used on input line
+ 319.
+(pdftex.def)             Requested size: 209.84015pt x 170.17001pt.
+[3
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.234 \end{document}
-                    {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
-(./report.aux)
+l.333 
+       <./images/Frac_MS_mass.png>]
+<images/sSFR_Mass_AgeColormap.png, id=144, 628.0263pt x 522.5121pt>
+File: images/sSFR_Mass_AgeColormap.png Graphic file (type png)
+<use images/sSFR_Mass_AgeColormap.png>
+Package pdftex.def Info: images/sSFR_Mass_AgeColormap.png  used on input line 3
+40.
+(pdftex.def)             Requested size: 209.84015pt x 174.5822pt.
+<images/sSFR_mass_Cantacode_csi_old_5-5.png, id=149, 684.3969pt x 555.0336pt>
+File: images/sSFR_mass_Cantacode_csi_old_5-5.png Graphic file (type png)
+<use images/sSFR_mass_Cantacode_csi_old_5-5.png>
+Package pdftex.def Info: images/sSFR_mass_Cantacode_csi_old_5-5.png  used on in
+put line 367.
+(pdftex.def)             Requested size: 209.84015pt x 170.17001pt.
+<images/sSFR_mass_Cantacode_csi_Dave.png, id=150, 684.3969pt x 555.0336pt>
+File: images/sSFR_mass_Cantacode_csi_Dave.png Graphic file (type png)
+<use images/sSFR_mass_Cantacode_csi_Dave.png>
+Package pdftex.def Info: images/sSFR_mass_Cantacode_csi_Dave.png  used on input
+ line 374.
+(pdftex.def)             Requested size: 209.84015pt x 170.17001pt.
+ [4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.384 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.384 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.384 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.384 
+       <./images/sSFR_mass_due_andamenti.png> <./images/sSFR_Mass_AgeColormap.p
+ng> <./images/sSFR_mass_Cantacode_csi_old_5-5.png> <./images/sSFR_mass_Cantacod
+e_csi_Dave.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
+
+ []
+
+(./report.bbl
+LaTeX Info: Redefining \VAN on input line 1.
+)
+
+Package natbib Warning: There were undefined citations.
+
+[5] (./report.aux)
  ***********
 LaTeX2e <2023-06-01>
 L3 programming layer <2023-06-05>
@@ -738,34 +879,37 @@ L3 programming layer <2023-06-05>
 
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.5pt have occurred.
+(Font)              up to 0.65498pt have occurred.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 04646E4C19BC489793B8AA61151416CC;1266.
+(rerunfilecheck)             Checksum: A5654C0CA7BA765134E9B395D70ECEB0;884.
  ) 
 Here is how much of TeX's memory you used:
- 14188 strings out of 475735
- 204274 string characters out of 5784787
- 1873759 words of memory out of 5000000
- 34683 multiletter control sequences out of 15000+600000
- 588111 words of font info for 139 fonts, out of 8000000 for 9000
+ 14385 strings out of 475735
+ 208469 string characters out of 5784787
+ 1877759 words of memory out of 5000000
+ 34812 multiletter control sequences out of 15000+600000
+ 637568 words of font info for 199 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,15n,93p,339b,424s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,15n,93p,1090b,424s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/share/texmf/fon
-ts/type1/public/tex-gyre/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/t
-xsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on report.pdf (1 page, 156885 bytes).
+/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texmf/fonts/type1/p
+ublic/tex-gyre/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx
+/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/newtx/ztmbi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ne
+wtx/ztmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on report.pdf (5 pages, 926870 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 95 words of extra memory for PDF output out of 10000 (max. 10000000)
 
